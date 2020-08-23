@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "esnext",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "outDir": "dist",
+        "sourceMap": false,
+        "declaration": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": ["src/*"],
+            "core/*": ["src/core/*"],
+            "router/*": ["src/router/*"],
+            "controllers/*": ["src/controllers/*"],
+            "managers/*": ["src/managers/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}

@@ -1,0 +1,42 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon",
+        "build": "babel src --out-dir dist --extensions \".ts,.tsx\"",
+        "start": "node dist/index.js"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.10.5",
+        "@babel/core": "^7.11.1",
+        "@babel/node": "^7.10.5",
+        "@babel/plugin-transform-runtime": "^7.11.0",
+        "@babel/preset-env": "^7.11.0",
+        "@babel/preset-typescript": "^7.10.4",
+        "@types/config": "^0.0.36",
+        "@types/knex": "^0.16.1",
+        "@types/koa": "^2.11.4",
+        "@types/koa-bodyparser": "^4.3.0",
+        "@types/koa__router": "^8.0.2",
+        "@types/node": "^14.6.0",
+        "babel-plugin-module-resolver": "^4.0.0",
+        "csvtojson": "^2.0.10",
+        "nodemon": "^2.0.4",
+        "prettier": "^2.0.5",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.7"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.11.2",
+        "@koa/cors": "^3.1.0",
+        "@koa/router": "^9.4.0",
+        "config": "^3.3.1",
+        "knex": "^0.21.5",
+        "knex-postgis": "^0.12.0",
+        "koa": "^2.13.0",
+        "koa-bodyparser": "^4.3.0",
+        "pg": "^8.3.2"
+    }
+}
